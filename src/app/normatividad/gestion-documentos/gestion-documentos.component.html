@@ -1,0 +1,17 @@
+<!-- gestion-documentos.component.html -->
+<div>
+    <h2>Gestión de Documentos Normativos</h2>
+    <label>
+      Nombre:
+      <input [(ngModel)]="documento.nombre" type="text">
+    </label>
+    <br>
+    <label>
+      Contenido:
+      <textarea [(ngModel)]="documento.contenido"></textarea>
+    </label>
+    <br>
+    <button (click)="guardarDocumento()">Guardar</button>
+    <button (click)="eliminarDocumento()">Eliminar</button>
+  </div>
+  
